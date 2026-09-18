@@ -39,334 +39,210 @@
   </tr>
 </table>
 
-
 ---
-
-以上内容保留
-
----
-
 
 <p align="center">
-  <img src="https://img.shields.io/badge/🎬-mpv中文统计脚本-00ADEF?style=for-the-badge&logo=mpv&logoColor=white" alt="mpv中文统计脚本">
+  <img src="https://img.shields.io/badge/🎬-MPVConfig-00ADEF?style=for-the-badge&logo=mpv&logoColor=white" alt="MPVConfig">
 </p>
 
 <p align="center">
-  <strong>✨ 完整汉化 · 即装即用 · 与原版功能同步 ✨</strong>
+  <strong>✨ MPV 播放器配置文件可视化设置工具 · 无需手动编辑 mpv.conf · 绿色便携双击即用 ✨</strong>
 </p>
 
-> [!IMPORTANT]
-> 🚫 **非商业使用声明**
->
-> 本项目仅供 **个人学习、研究和非商业用途** 使用，**严禁任何形式的商业使用**，
-> 包括但不限于收费、将本脚本打包进收费整合包或付费服务等行为。
->
-> 📄 详见 [LICENSE.md](LICENSE.md)
-
----
-
-# 🎬 mpv 中文版统计脚本 (stats.lua) 汉化原创  
-
 <!-- 第一行：社交互动核心指标 -->
-[![GitHub stars](https://img.shields.io/github/stars/yosh-wang/mpv-stats.lua-zh-chinese-translation-)](https://github.com/yosh-wang/mpv-stats.lua-zh-chinese-translation-/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/yosh-wang/mpv-stats.lua-zh-chinese-translation-)](https://github.com/yosh-wang/mpv-stats.lua-zh-chinese-translation-/forks)
-[![GitHub watchers](https://img.shields.io/github/watchers/yosh-wang/mpv-stats.lua-zh-chinese-translation-)](https://github.com/yosh-wang/mpv-stats.lua-zh-chinese-translation-/watchers)
-
-<!-- 第二行：项目数据徽章 -->
-[![GitHub Repo stars](https://img.shields.io/github/stars/yosh-wang/mpv-stats.lua-zh-chinese-translation-?style=flat-square)](https://github.com/yosh-wang/mpv-stats.lua-zh-chinese-translation-/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/yosh-wang/mpv-stats.lua-zh-chinese-translation-?style=flat-square)](https://github.com/yosh-wang/mpv-stats.lua-zh-chinese-translation-/forks)
-[![GitHub issues](https://img.shields.io/github/issues/yosh-wang/mpv-stats.lua-zh-chinese-translation-?style=flat-square)](https://github.com/yosh-wang/mpv-stats.lua-zh-chinese-translation-/issues)
-[![GitHub watchers](https://img.shields.io/github/watchers/yosh-wang/mpv-stats.lua-zh-chinese-translation-?style=flat-square)](https://github.com/yosh-wang/mpv-stats.lua-zh-chinese-translation-/watchers)
-[![GitHub contributors](https://img.shields.io/github/contributors/yosh-wang/mpv-stats.lua-zh-chinese-translation-?style=flat-square)](https://github.com/yosh-wang/mpv-stats.lua-zh-chinese-translation-/graphs/contributors)
-[![GitHub license](https://img.shields.io/github/license/yosh-wang/mpv-stats.lua-zh-chinese-translation-?style=flat-square)](https://github.com/yosh-wang/mpv-stats.lua-zh-chinese-translation-/blob/main/LICENSE)
-
-<!-- 第三行：版本发布与下载统计 -->
-[![GitHub release (latest by date)](https://img.shields.io/github/v/release/yosh-wang/mpv-stats.lua-zh-chinese-translation-)](https://github.com/yosh-wang/mpv-stats.lua-zh-chinese-translation-/releases/latest)
-[![GitHub tag](https://img.shields.io/github/v/tag/yosh-wang/mpv-stats.lua-zh-chinese-translation-)](https://github.com/yosh-wang/mpv-stats.lua-zh-chinese-translation-/tags)
-[![GitHub release date](https://img.shields.io/github/release-date/yosh-wang/mpv-stats.lua-zh-chinese-translation-)](https://github.com/yosh-wang/mpv-stats.lua-zh-chinese-translation-/releases)
-[![GitHub downloads (latest)](https://img.shields.io/github/downloads/yosh-wang/mpv-stats.lua-zh-chinese-translation-/latest/total?cacheSeconds=300)](https://github.com/yosh-wang/mpv-stats.lua-zh-chinese-translation-/releases/latest)
-[![GitHub downloads](https://img.shields.io/github/downloads/yosh-wang/mpv-stats.lua-zh-chinese-translation-/total)](https://github.com/yosh-wang/mpv-stats.lua-zh-chinese-translation-/releases)
-[![License](https://img.shields.io/badge/License-NonCommercial-red.svg)](https://github.com/yosh-wang/mpv-stats.lua-zh-chinese-translation-/blob/main/LICENSE)
-
-<!-- 第四行：提交活动与贡献者 -->
-[![GitHub last commit](https://img.shields.io/github/last-commit/yosh-wang/mpv-stats.lua-zh-chinese-translation-)](https://github.com/yosh-wang/mpv-stats.lua-zh-chinese-translation-/commits/main)
-[![GitHub commit activity (monthly)](https://img.shields.io/github/commit-activity/m/yosh-wang/mpv-stats.lua-zh-chinese-translation-)](https://github.com/yosh-wang/mpv-stats.lua-zh-chinese-translation-/commits/main)
-[![GitHub commit activity (weekly)](https://img.shields.io/github/commit-activity/w/yosh-wang/mpv-stats.lua-zh-chinese-translation-)](https://github.com/yosh-wang/mpv-stats.lua-zh-chinese-translation-/commits/main)
-[![GitHub commit activity (yearly)](https://img.shields.io/github/commit-activity/y/yosh-wang/mpv-stats.lua-zh-chinese-translation-)](https://github.com/yosh-wang/mpv-stats.lua-zh-chinese-translation-/commits/main)
-[![GitHub contributors](https://img.shields.io/github/contributors/yosh-wang/mpv-stats.lua-zh-chinese-translation-)](https://github.com/yosh-wang/mpv-stats.lua-zh-chinese-translation-/graphs/contributors)
-[![GitHub contributors (anon)](https://img.shields.io/github/contributors-anon/yosh-wang/mpv-stats.lua-zh-chinese-translation-)](https://github.com/yosh-wang/mpv-stats.lua-zh-chinese-translation-/graphs/contributors)
-
-<!-- 第五行：代码信息与技术栈 -->
-[![GitHub top language](https://img.shields.io/github/languages/top/yosh-wang/mpv-stats.lua-zh-chinese-translation-)](https://github.com/yosh-wang/mpv-stats.lua-zh-chinese-translation-)
-[![GitHub language count](https://img.shields.io/github/languages/count/yosh-wang/mpv-stats.lua-zh-chinese-translation-)](https://github.com/yosh-wang/mpv-stats.lua-zh-chinese-translation-)
-[![GitHub repo size](https://img.shields.io/github/repo-size/yosh-wang/mpv-stats.lua-zh-chinese-translation-)](https://github.com/yosh-wang/mpv-stats.lua-zh-chinese-translation-)
-[![GitHub code size](https://img.shields.io/github/languages/code-size/yosh-wang/mpv-stats.lua-zh-chinese-translation-)](https://github.com/yosh-wang/mpv-stats.lua-zh-chinese-translation-)
-[![GitHub file count](https://img.shields.io/github/directory-file-count/yosh-wang/mpv-stats.lua-zh-chinese-translation-)](https://github.com/yosh-wang/mpv-stats.lua-zh-chinese-translation-)
-[![Lines of Code](https://img.shields.io/tokei/lines/github/yosh-wang/mpv-stats.lua-zh-chinese-translation-)](https://github.com/yosh-wang/mpv-stats.lua-zh-chinese-translation-)
-
-<!-- 第六行：自定义静态徽章 -->
-![Status](https://img.shields.io/badge/Status-Stable-brightgreen)
-![Maintained](https://img.shields.io/badge/Maintained-Yes-brightgreen)
-![MPV](https://img.shields.io/badge/MPV-Player-blue)
-![Language](https://img.shields.io/badge/Language-Lua-red)
-![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20macOS%20%7C%20Linux-lightgrey)
-![Translation](https://img.shields.io/badge/Translation-100%25-brightgreen)
-![Chinese](https://img.shields.io/badge/语言-中文-red)
-
----
-
-## 📖 项目简介 & 
-
-**mpv stats.lua 完整中文翻译版** — 所有界面、提示、菜单全部中文化。
-
-| 项目 | 信息 |
-|------|------|
-| 原版文件 | [stats.lua](https://github.com/mpv-player/mpv/blob/master/player/lua/stats.lua) |
-| 中文版 | 本项目 |
-| 最新同步 | [`de0f2f9`](https://github.com/mpv-player/mpv/commit/de0f2f9) (2026-02-10) |
-| 同步内容 | `correctly override mp.input keybinds` |
-| 同步状态 | ✅ 已同步 |
-
----
-
-## ✨ 特性
-
-| 特性 | 说明 |
-|:-----|:-----|
-| **🇨🇳 中文界面** | 所有统计信息、菜单选项、按键提示均完整翻译 |
-| **🔄 功能同步** | 与原版保持同步，支持所有快捷键和页面切换 |
-| **⚡ 即装即用** | 两步安装，无需额外配置 |
-| **📦 轻量高效** | 单文件，不占用额外资源 |
-
----
-
-## 🧠 智能翻译模块 (Smart Translation Module)
-
-### 模块特点
-
-| 特点 | 说明 |
-|:---:|------|
-| 🔌 非侵入式 | 不修改原版核心逻辑，通过劫持输出函数实现翻译 |
-| 🔄 易于同步 | 原版更新时，只需替换原版文件，翻译模块无需修改 |
-| 🎯 智能匹配 | 支持精确匹配和模糊匹配，提高翻译覆盖率 |
-| 📊 专业术语 | 针对 HDR、性能分析等专业术语进行了准确翻译 |
-| ⚡ 零开销 | 翻译仅在输出时执行，不影响播放性能 |
-
-### 翻译覆盖范围
-
-| 类别 | 覆盖内容 |
-|------|------|
-| ✅ 页面标题 | 所有 6 个统计页面 |
-| ✅ 音视频参数 | 编解码器、采样率、码率等 |
-| ✅ HDR 元数据 | PQ、MaxCLL、MaxFALL 等专业术语 |
-| ✅ 缓存状态 | 预读、速度、内存占用等 |
-| ✅ 按键绑定 | 界面提示和搜索功能 |
-| ✅ 性能分析 | `poll-time`、`vo/video-draw` 等内部指标 |
-| ✅ 轨道信息 | 语言、标志位、重放增益等 |
-
----
-## 📊 系统资源监控模块
-
-本脚本集成了 **CPU / GPU 实时占用率监控** 功能，支持多显卡识别与显示。
-
-### 显示效果
-
-| 设备类型 | 显示效果 |
-|:---|:---|
-| **笔记本电脑（双显卡）** | `CPU: 21%   CPU: Intel(R) Core(TM) i7-8700K CPU @ 3.70GHz`<br>`GPU: 45%   GPU: Intel UHD Graphics`<br>`GPU: 45%   GPU: NVIDIA GeForce GTX 1660 SUPER` |
-| **台式机（单独显）** | `CPU: 21%   CPU: Intel(R) Core(TM) i7-8700K CPU @ 3.70GHz`<br>`GPU: 45%   GPU: NVIDIA GeForce GTX 1660 SUPER` |
-
-### 功能特点
-
-| 特性 | 说明 |
-|:---|:---|
-| **多 GPU 识别** | 自动检测并显示所有 GPU（集显 + 独显） |
-| **智能排序** | 集显在前，独显在后（笔记本优先显示集显） |
-| **占用率刷新** | CPU 每秒刷新，GPU 每 3 秒刷新（平衡性能与实时性） |
-| **NVIDIA 优先** | 自动识别 NVIDIA 显卡并使用 `nvidia-smi` 获取准确数据 |
-| **虚拟显卡过滤** | 自动过滤 RDP、向日葵等虚拟显示设备 |
-| **跨平台支持** | Windows / Linux / macOS |
-
-> 💡 **提示**：占用率数据仅在统计页面打开时刷新，关闭后自动停止，不影响播放性能。
-
----
-
-## 📱 安卓支持 感谢【XSHNDWX】的技术支持 请下载：v21.0.0 版本
-
-### 控制方式
-
-| 控制方式 | 说明 |
-|:-----|:-----|
-| **自定义按钮** | 通过 `script-message` 接口控制统计页面 |
-| **一键循环切换** | 单个按钮循环浏览所有统计页面，最后一页自动关闭 |
-
-### 按钮命令
-
-| 按钮名称 | 命令 | 说明 |
-|:-----|:-----|:-----|
-| 默认信息 | `script-message toggle-stats-page-1` | 显示/关闭默认统计页面 |
-| 帧耗时 | `script-message toggle-stats-page-2` | 显示/关闭扩展帧耗时页面 |
-| 缓存统计 | `script-message toggle-stats-page-3` | 显示/关闭缓存统计页面 |
-| 按键绑定 | `script-message toggle-stats-page-4` | 显示/关闭活动按键绑定页面 |
-| 轨道信息 | `script-message toggle-stats-page-5` | 显示/关闭轨道信息页面 |
-| 内部性能 | `script-message toggle-stats-page-0` | 显示/关闭内部性能信息页面 |
-| **一键切换** | `script-message toggle-stats` | **循环切换所有页面，最后一页自动关闭** |
-| 关闭统计 | `script-message close-stats` | 强制关闭所有统计显示 |
-
-### 使用说明
-
-1. **点击任意页面按钮** → 显示对应统计页面
-2. **再次点击同一个按钮** → 关闭该统计页面
-3. **点击"一键切换"按钮** → 依次循环显示：默认信息 → 帧耗时 → 缓存统计 → 按键绑定 → 轨道信息 → 内部性能 → 关闭
-4. **点击"关闭统计"** → 直接关闭所有正在显示的统计
-
----
-
-## 📥 安装
-
-### 1️⃣ 禁用内置英文脚本
-
-在 `mpv.conf` 文件中修改或者添加以下代码：
-
-```ini
-load-stats-overlay=no
-```
-
-### 2️⃣ 安装本脚本
-
-将 `stats.lua` 放入 mpv 的脚本目录：
-
-整合包的位置在：mpv_config\portable_config\scripts\stats.lua
-
----
-
-## 📜 开源协议
-
-本项目基于 [非商业使用许可](https://github.com/yosh-wang/mpv-stats.lua-zh-chinese-translation-/blob/main/LICENSE.md) 协议发布，仅供个人学习、研究使用，**严禁商业使用和任何形式的收费**。
-
----
-
-## 📸 预览
-
-<img width="1200" height="675" alt="4b301423580159c070d19ebffa3d679b" src="https://github.com/user-attachments/assets/e8926c21-4c0a-42c2-948a-4b2d5517e25a" />
-<img width="1200" height="675" alt="1" src="https://github.com/user-attachments/assets/3597c982-c51f-47ed-8c20-14d9365ffb37" />
-<img width="1200" height="675" alt="2" src="https://github.com/user-attachments/assets/e5112a5a-2524-4603-a792-fd2f67d0778c" />
-<img width="1200" height="675" alt="3" src="https://github.com/user-attachments/assets/67c45620-3e2b-4206-9fdc-0f30e4e05ad2" />
-<img width="1200" height="675" alt="4" src="https://github.com/user-attachments/assets/9f82e17d-e789-4cdd-8a7b-3f0af267645a" />
-<img width="1200" height="675" alt="5" src="https://github.com/user-attachments/assets/c115431f-604f-46b1-8f5f-3d4cc848752c" />
-<img width="1200" height="675" alt="6" src="https://github.com/user-attachments/assets/4de58e57-ac98-4d59-b14d-dc76c77e8a2b" />
-
----
----
-
-# 🎬 mpv Chinese Stats Script (stats.lua)
-
-<!-- 第一行：社交互动核心指标 -->
-[![GitHub stars](https://img.shields.io/github/stars/yosh-wang/mpv-stats.lua-zh-chinese-translation-)](https://github.com/yosh-wang/mpv-stats.lua-zh-chinese-translation-/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/yosh-wang/mpv-stats.lua-zh-chinese-translation-)](https://github.com/yosh-wang/mpv-stats.lua-zh-chinese-translation-/forks)
-[![GitHub watchers](https://img.shields.io/github/watchers/yosh-wang/mpv-stats.lua-zh-chinese-translation-)](https://github.com/yosh-wang/mpv-stats.lua-zh-chinese-translation-/watchers)
+[![GitHub stars](https://img.shields.io/github/stars/yosh-wang/MPV-Settings)](https://github.com/yosh-wang/MPV-Settings/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/yosh-wang/MPV-Settings)](https://github.com/yosh-wang/MPV-Settings/forks)
+[![GitHub watchers](https://img.shields.io/github/watchers/yosh-wang/MPV-Settings)](https://github.com/yosh-wang/MPV-Settings/watchers)
 
 <!-- 第二行：版本发布与下载统计 -->
-[![GitHub release (latest by date)](https://img.shields.io/github/v/release/yosh-wang/mpv-stats.lua-zh-chinese-translation-)](https://github.com/yosh-wang/mpv-stats.lua-zh-chinese-translation-/releases/latest)
-[![GitHub tag](https://img.shields.io/github/v/tag/yosh-wang/mpv-stats.lua-zh-chinese-translation-)](https://github.com/yosh-wang/mpv-stats.lua-zh-chinese-translation-/tags)
-[![GitHub release date](https://img.shields.io/github/release-date/yosh-wang/mpv-stats.lua-zh-chinese-translation-)](https://github.com/yosh-wang/mpv-stats.lua-zh-chinese-translation-/releases)
-[![GitHub downloads](https://img.shields.io/github/downloads/yosh-wang/mpv-stats.lua-zh-chinese-translation-/v6.0.0/total?cacheSeconds=300)](https://github.com/yosh-wang/mpv-stats.lua-zh-chinese-translation-/releases/tag/v6.0.0)
-[![GitHub downloads](https://img.shields.io/github/downloads/yosh-wang/mpv-stats.lua-zh-chinese-translation-/total)](https://github.com/yosh-wang/mpv-stats.lua-zh-chinese-translation-/releases)
-[![License](https://img.shields.io/badge/License-NonCommercial-red.svg)](https://github.com/yosh-wang/mpv-stats.lua-zh-chinese-translation-/blob/main/LICENSE)
-
+[![GitHub release (latest by date)](https://img.shields.io/github/v/release/yosh-wang/MPV-Settings)](https://github.com/yosh-wang/MPV-Settings/releases/latest)
+[![GitHub tag](https://img.shields.io/github/v/tag/yosh-wang/MPV-Settings)](https://github.com/yosh-wang/MPV-Settings/tags)
+[![GitHub release date](https://img.shields.io/github/release-date/yosh-wang/MPV-Settings)](https://github.com/yosh-wang/MPV-Settings/releases)
+[![GitHub downloads (latest)](https://img.shields.io/github/downloads/yosh-wang/MPV-Settings/latest/total?cacheSeconds=300)](https://github.com/yosh-wang/MPV-Settings/releases/latest)
+[![GitHub downloads](https://img.shields.io/github/downloads/yosh-wang/MPV-Settings/total)](https://github.com/yosh-wang/MPV-Settings/releases)
+[![License](https://img.shields.io/badge/License-NonCommercial-red.svg)](LICENSE.md)
 
 <!-- 第三行：提交活动与贡献者 -->
-[![GitHub last commit](https://img.shields.io/github/last-commit/yosh-wang/mpv-stats.lua-zh-chinese-translation-)](https://github.com/yosh-wang/mpv-stats.lua-zh-chinese-translation-/commits/main)
-[![GitHub commit activity (monthly)](https://img.shields.io/github/commit-activity/m/yosh-wang/mpv-stats.lua-zh-chinese-translation-)](https://github.com/yosh-wang/mpv-stats.lua-zh-chinese-translation-/commits/main)
-[![GitHub commit activity (weekly)](https://img.shields.io/github/commit-activity/w/yosh-wang/mpv-stats.lua-zh-chinese-translation-)](https://github.com/yosh-wang/mpv-stats.lua-zh-chinese-translation-/commits/main)
-[![GitHub commit activity (yearly)](https://img.shields.io/github/commit-activity/y/yosh-wang/mpv-stats.lua-zh-chinese-translation-)](https://github.com/yosh-wang/mpv-stats.lua-zh-chinese-translation-/commits/main)
-[![GitHub contributors](https://img.shields.io/github/contributors/yosh-wang/mpv-stats.lua-zh-chinese-translation-)](https://github.com/yosh-wang/mpv-stats.lua-zh-chinese-translation-/graphs/contributors)
-[![GitHub contributors (anon)](https://img.shields.io/github/contributors-anon/yosh-wang/mpv-stats.lua-zh-chinese-translation-)](https://github.com/yosh-wang/mpv-stats.lua-zh-chinese-translation-/graphs/contributors)
+[![GitHub last commit](https://img.shields.io/github/last-commit/yosh-wang/MPV-Settings)](https://github.com/yosh-wang/MPV-Settings/commits/main)
+[![GitHub commit activity (monthly)](https://img.shields.io/github/commit-activity/m/yosh-wang/MPV-Settings)](https://github.com/yosh-wang/MPV-Settings/commits/main)
+[![GitHub contributors](https://img.shields.io/github/contributors/yosh-wang/MPV-Settings)](https://github.com/yosh-wang/MPV-Settings/graphs/contributors)
+[![GitHub issues](https://img.shields.io/github/issues/yosh-wang/MPV-Settings?style=flat-square)](https://github.com/yosh-wang/MPV-Settings/issues)
 
 <!-- 第四行：代码信息与技术栈 -->
-[![GitHub top language](https://img.shields.io/github/languages/top/yosh-wang/mpv-stats.lua-zh-chinese-translation-)](https://github.com/yosh-wang/mpv-stats.lua-zh-chinese-translation-)
-[![GitHub language count](https://img.shields.io/github/languages/count/yosh-wang/mpv-stats.lua-zh-chinese-translation-)](https://github.com/yosh-wang/mpv-stats.lua-zh-chinese-translation-)
-[![GitHub repo size](https://img.shields.io/github/repo-size/yosh-wang/mpv-stats.lua-zh-chinese-translation-)](https://github.com/yosh-wang/mpv-stats.lua-zh-chinese-translation-)
-[![GitHub code size](https://img.shields.io/github/languages/code-size/yosh-wang/mpv-stats.lua-zh-chinese-translation-)](https://github.com/yosh-wang/mpv-stats.lua-zh-chinese-translation-)
-[![GitHub file count](https://img.shields.io/github/directory-file-count/yosh-wang/mpv-stats.lua-zh-chinese-translation-)](https://github.com/yosh-wang/mpv-stats.lua-zh-chinese-translation-)
-[![Lines of Code](https://img.shields.io/tokei/lines/github/yosh-wang/mpv-stats.lua-zh-chinese-translation-)](https://github.com/yosh-wang/mpv-stats.lua-zh-chinese-translation-)
+[![GitHub repo size](https://img.shields.io/github/repo-size/yosh-wang/MPV-Settings)](https://github.com/yosh-wang/MPV-Settings)
+[![GitHub code size](https://img.shields.io/github/languages/code-size/yosh-wang/MPV-Settings)](https://github.com/yosh-wang/MPV-Settings)
+[![Lines of Code](https://img.shields.io/tokei/lines/github/yosh-wang/MPV-Settings)](https://github.com/yosh-wang/MPV-Settings)
 
 <!-- 第五行：自定义静态徽章 -->
 ![Status](https://img.shields.io/badge/Status-Stable-brightgreen)
 ![Maintained](https://img.shields.io/badge/Maintained-Yes-brightgreen)
 ![MPV](https://img.shields.io/badge/MPV-Player-blue)
-![Language](https://img.shields.io/badge/Language-Lua-red)
-![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20macOS%20%7C%20Linux-lightgrey)
-![Translation](https://img.shields.io/badge/Translation-100%25-brightgreen)
-![Chinese](https://img.shields.io/badge/语言-中文-red)
+![Language](https://img.shields.io/badge/语言-中文-red)
+![Platform](https://img.shields.io/badge/Platform-Windows%2010%2B-lightgrey)
+![Portable](https://img.shields.io/badge/绿色便携-免安装-success)
+![Offline](https://img.shields.io/badge/离线运行-零联网-blueviolet)
 
-
-</div>
-
----
-
-## 📖 Project Overview & 
-
-**mpv stats.lua Full Chinese Translation** — All interfaces, prompts, and menus fully localized into Chinese.
-
-| Item | Information |
-|------|-------------|
-| Original File | [stats.lua](https://github.com/mpv-player/mpv/blob/master/player/lua/stats.lua) |
-| Chinese Version | This project |
-| Last Sync | [`de0f2f9`](https://github.com/mpv-player/mpv/commit/de0f2f9) (2026-02-10) |
-| Sync Content | `correctly override mp.input keybinds` |
-| Sync Status | ✅ Synced |
+> [!IMPORTANT]
+> 🚫 **非商业使用声明**
+>
+> 本项目仅供 **个人学习、研究和非商业用途** 使用，**严禁任何形式的商业使用**，
+> 包括但不限于收费、将本工具打包进收费整合包或付费服务等行为。
+>
+> 📄 详见 [LICENSE.md](LICENSE.md)
 
 ---
 
-## 📥 Installation
+## 📖 项目简介
 
-### 1️⃣ Disable the built‑in script
+**MPVConfig 中文便携版** —— 一款为 mpv 播放器打造的 **配置文件可视化设置工具**。
 
-Add the following line to your `mpv.conf`:
+不用再翻文档、不用再手动改 `mpv.conf` / `input.conf` / `uosc.conf`：打开程序、自动定位你的 mpv 配置、改完一键全部保存。绿色便携，**双击即用，不写注册表、不联网**。
 
-```ini
-load-stats-overlay=no
-```
-
-### 2️⃣ Install this script
-
-The location for portable packages is: mpv_config\portable_config\scripts\stats.lua
-  
----
-
-## 📜 License / 
-
-This project is released under the [Non-Commercial License](https://github.com/yosh-wang/mpv-stats.lua-zh-chinese-translation-/blob/main/LICENSE.md). Strictly no commercial use or charging.  
+| 项目 | 信息 |
+|------|------|
+| 适用平台 | Windows 10 及以上（64 位） |
+| 运行方式 | 绿色便携，免安装，单文件运行 |
+| 管理对象 | `mpv.conf` / `input.conf` / `uosc.conf` / 脚本配置（script-opts） |
+| 最新版本 | [Releases](https://github.com/yosh-wang/MPV-Settings/releases/latest) |
+| 交流群 | 上方 QQ 群 ① / ② |
 
 ---
 
-## 📸 Preview / 
+## 📄 四合一标签页
 
-<img width="1200" height="675" alt="1" src="https://github.com/user-attachments/assets/3597c982-c51f-47ed-8c20-14d9365ffb37" />
-<img width="1200" height="675" alt="2" src="https://github.com/user-attachments/assets/e5112a5a-2524-4603-a792-fd2f67d0778c" />
-<img width="1200" height="675" alt="3" src="https://github.com/user-attachments/assets/67c45620-3e2b-4206-9fdc-0f30e4e05ad2" />
-<img width="1200" height="675" alt="4" src="https://github.com/user-attachments/assets/9f82e17d-e789-4cdd-8a7b-3f0af267645a" />
-<img width="1200" height="675" alt="5" src="https://github.com/user-attachments/assets/c115431f-604f-46b1-8f5f-3d4cc848752c" />
-<img width="1200" height="675" alt="6" src="https://github.com/user-attachments/assets/4de58e57-ac98-4d59-b14d-dc76c77e8a2b" />
+程序把 mpv 的四类配置文件整合进同一个窗口，按来源文件夹分组着色、同源联动：
+
+| 标签 | 管理文件 | 能做什么 |
+|:----:|:---------|:---------|
+| **📄 a · mpv 软件设置** | `mpv.conf` | 全部参数分类管理；常用参数常驻、其余折叠；拖拽摆放与排序，下次打开还是你摆的样子 |
+| **⌨️ b · 菜单与快捷方式** | `input.conf` | 键位 / 命令 / 菜单路径行内直接改；跨菜单拖拽移动（自动改写 `#menu:` 路径）；快捷键冲突检测 |
+| **🎛 c · ousc 设置** | `uosc.conf` | uosc 键值可视化编辑，与脚本配置统一操作体验 |
+| **🗂 d · 脚本管理器** | `script-opts\*.conf` / `scripts\*.lua` | 全部脚本配置可编辑；lua 文件只读浏览 |
+
+> 💡 **智能定位**：把 mpv 文件夹（或 mpv.exe / 任一配置文件）拖进窗口，自动定位整套配置——`portable_config` 目录结构无需手动翻找。
 
 ---
 
+## ✨ 核心功能
+
+| 功能 | 说明 |
+|:-----|:-----|
+| **🔀 拖拽摆放** | 参数拖到左侧分类上即归入并记住；拖动时右侧实时展开目标分类预览，选哪两行之间就落在哪 |
+| **✅✅ 双开关设计** | input.conf 每条快捷键两个独立开关：「✓ 启用」控制整条生效，「☰ 菜单」控制是否进 uosc 右键菜单，互不干扰 |
+| **⚠️ 冲突检测** | 键位改重复即时提醒（弹窗直达冲突行）；符合 mpv 真实规则：`o` 与 `O` 是不同的键、Ctrl 等修饰键不区分大小写与顺序、`_` 为占位键不占用 |
+| **🕘 备份与恢复** | 每次保存自动备份到 `backups\`，备份列表备注 / 恢复 / 删除一目了然，恢复前还会先把当前文件再备份一次 |
+| **↩️ 撤销** | 误删 / 误移 / 新增，一步撤回（12 秒撤销条 + 顶部「↩ 撤销」） |
+| **🔍 全局搜索** | 四个标签页均支持关键词即时过滤（键位 / 命令 / 菜单路径 / 配置项） |
+| **🎨 主题** | 深色 / 浅色主题随心切换 |
+| **🪟 布局记忆** | 窗口大小位置自动记忆，四标签布局跨会话恢复 |
+
 ---
 
-## 📄 许可证
+## ⌨️ 键位写法约定（input.conf）
 
-本项目基于 **非商业使用许可** 开源，**严禁商用**。
+程序完全遵循 mpv 官方注释规则与 uosc 菜单约定，未改动的行**原样保留**：
 
-📖 详见 [LICENSE.md](LICENSE.md)
+| 写法 | 含义 |
+|:-----|:-----|
+| `F1   命令  #menu: 文件 > 打开` | 快捷键 + 进 uosc 菜单 |
+| `#    命令  #menu: 文件 > 打开` | 纯菜单项（不绑键，uosc 官方写法） |
+| `#F1  命令` | 整条停用（菜单和快捷键都消失） |
+| `_    命令  #menu: 工具 > xx` | 占位键（纯菜单项的另一种约定，弹幕等脚本常用） |
+
+---
+
+## 📸 预览
+
+![screenshot](screenshot.png)
+
+---
+
+## 📥 下载
+
+前往 [**Releases**](https://github.com/yosh-wang/MPV-Settings/releases/latest) 下载最新的 `MPVConfig-中文便携版-x.x.x.zip`。
+
+- 发布版为**单文件 exe**（资源已内嵌），解压后只有一个 `MPVConfig.exe`
+- 程序不写注册表、不产生垃圾文件，删掉文件夹即彻底卸载
+
+---
+
+## 🚀 使用方法
+
+### 1️⃣ 运行
+
+解压后双击 `MPVConfig.exe`（免安装）。
+
+### 2️⃣ 定位配置
+
+首次打开选择你的 **mpv 文件夹**（或 mpv.exe / mpv.conf，任选其一即可自动定位整套配置）。
+
+### 3️⃣ 修改并保存
+
+修改参数后点 **「🔗 全部保存」**，重启 mpv 生效。
+
+> 💡 每次保存都会自动备份到程序目录 `backups\`，改坏了随时一键恢复。
+
+---
+
+## 💡 使用技巧
+
+| 技巧 | 操作 |
+|:-----|:-----|
+| **参数归类** | 在 a 标签按住参数拖到左侧分类上：不松手可预览目标分类的参数列表，落到某两行之间即精准摆放 |
+| **快捷键搬家** | b 标签按住行拖到左侧大分组，跨菜单移动会自动改写 `#menu:` 路径 |
+| **纯菜单项** | 键位留空 = 纯菜单项（保存为 `#`）；填 `_` 同样只进菜单不占键位 |
+| **找回误删** | 右键删除 / 行操作都有 12 秒撤销条，点一下就回来 |
+| **快速过滤** | 顶部搜索框四个标签通用，输入即过滤，Esc 一键清空 |
+
+---
+
+## ❓ 常见问题
+
+<details>
+<summary><b>🔒 杀毒软件报毒怎么办？</b></summary>
+<br>
+程序发布版对脚本做了代码混淆（防止白嫖党二次打包倒卖），个别杀软可能误报。本程序不联网、不收集任何数据，添加信任即可。请务必只从本仓库官方 Releases 页面下载。
+</details>
+
+<details>
+<summary><b>📡 程序会联网吗？</b></summary>
+<br>
+不会。所有操作仅读写本地配置文件，无任何网络请求。
+</details>
+
+<details>
+<summary><b>🗂 我的配置文件在哪？</b></summary>
+<br>
+程序自动定位 mpv 目录下的 `portable_config\`（整合包）或 `%APPDATA%\mpv\`；备份保存在程序目录 `backups\`。
+</details>
+
+<details>
+<summary><b>💾 修改后没生效？</b></summary>
+<br>
+点「🔗 全部保存」后需重启 mpv（或重新载入配置）才会应用。
+</details>
+
+---
+
+## 📜 开源协议
+
+本项目基于 [非商业使用许可](LICENSE.md) 协议发布，仅供个人学习、研究使用，**严禁商业使用和任何形式的收费**。
+
+---
+
+## 🤝 反馈与贡献
+
+- 🐛 发现问题 / 有功能建议？请提 [Issue](https://github.com/yosh-wang/MPV-Settings/issues)，或进上方 QQ 群交流
+- 📝 更新内容见 [CHANGELOG.md](CHANGELOG.md)
+- 🔒 安全问题请勿公开提交，见 [SECURITY.md](SECURITY.md)
 
 ---
 
 ## 🙏 致谢
 
 - [mpv 播放器](https://mpv.io/) — 强大而优雅的媒体播放器
-- [@XSHNDWX](https://github.com/XSHNDWX) — 安卓平台技术支持
-- 所有使用和反馈本脚本的朋友们
+- [uosc](https://github.com/tomasklaen/uosc) — 优秀的 mpv UI 框架
+- 所有使用和反馈本工具的朋友们
 
 ---
 
@@ -377,4 +253,3 @@ This project is released under the [Non-Commercial License](https://github.com/y
 <p align="center">
   <sub>⭐ 如果这个项目对您有帮助，请给一个 Star 支持一下！</sub>
 </p>
-```
