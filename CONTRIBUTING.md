@@ -1,54 +1,6 @@
-# 🤝 Contributing Guide
-
-Thank you for helping to improve this Chinese translation script!
-
----
-
-## 📝 How to Contribute
-
-### 🐛 Report Issues
-
-If you find translation errors, layout issues, or missing features, please open an **Issue** and include:
-- The mpv version you are using
-- Steps to reproduce the problem
-
-### ✏️ Submit Translation Improvements
-
-1. **Fork** this repository
-2. Make changes to `stats.lua` – look for `_("...")` or modify the translated strings directly
-3. Test to ensure there are no syntax errors
-4. Open a **Pull Request** and describe your changes
-
-### 🔄 Sync with Upstream
-
-When the official mpv project updates `stats.lua`, check for new strings that need translation. You can compare differences using tools like `diff`.
-
----
-
-## 📖 Translation Guidelines
-
-- Maintain **terminology consistency** (e.g., 缓存, 解码器, 帧率)
-- Keep original English punctuation style where possible
-- Technical terms may remain in English (e.g., HDR, VSync) as long as the context is clear
-
----
-
-## 🛠️ Development Environment
-
-No special environment required. Any text editor works.  
-To test, place `stats.lua` in mpv’s `scripts` folder, play any video, and press `i` to verify the translation.
-
----
-
-## ⚖️ License
-
-All contributions will be licensed under the same **MIT License** as this project.
-
----
-
 # 🤝 贡献指南
 
-感谢你愿意帮助改进这个中文翻译脚本！
+感谢你愿意帮助改进 **MPVConfig 中文便携版**！
 
 ---
 
@@ -56,44 +8,33 @@ All contributions will be licensed under the same **MIT License** as this projec
 
 ### 🐛 报告问题
 
-如果发现翻译错误、界面错位或功能缺失，请在 **Issues** 中提出，并附上：
-- 你使用的 mpv 版本
-- 重现步骤
+如果发现功能异常或界面问题，请在 [Issues](https://github.com/yosh-wang/MPV-Settings/issues) 中提出，并尽量附上：
 
-### ✏️ 提交翻译改进
+- 你使用的 **Windows 版本**（如 Windows 10 / 11）
+- 使用的 **mpv 版本** 与整合包类型
+- **重现步骤**（怎么操作出现的）
+- 出现问题的配置文件片段（如涉及 mpv.conf / input.conf）
 
-1. **Fork** 本仓库
-2. 在 `stats.lua` 中修改翻译文本（搜索 `_("...")` 或直接修改字符串）
-3. 测试确保没有语法错误
-4. 发起 **Pull Request**，并说明修改内容
+### 💡 功能建议
 
-### 🔄 同步上游更新
+欢迎提出新功能想法！说明「想解决什么问题」比「想要什么按钮」更有帮助，我们会优先考虑能帮到最多用户的改进。
 
-当 mpv 官方更新 `stats.lua` 时，请留意是否新增了需要翻译的字符串。你可以通过对比工具（如 `diff`）查看差异。
+### 💬 交流讨论
 
----
-
-## 📖 翻译规范
-
-- 保持**术语一致性**（如“缓存”“解码器”“帧率”）
-- 尽量保留原英文标点格式
-- 技术术语可保留英文（如 HDR、VSync），但需确保上下文清晰
+也可以加入上方 README 中的 **QQ 交流群**，直接和作者及其他玩家讨论。
 
 ---
 
-## 🛠️ 开发环境
-
-无需特殊环境，任意文本编辑器即可。  
-测试时可将 `stats.lua` 放入 mpv 的 `scripts` 目录，用任意视频播放并按下 `i` 验证。
+> ℹ️ 本仓库发布的是打包后的程序（见 Releases），源码暂未开源。反馈问题与建议是对本项目最有帮助的贡献方式。
 
 ---
 
 ## ⚖️ 许可证
 
-所有贡献将采用与本项目相同的 **MIT 许可证**。
+所有反馈与贡献的内容将遵循本项目的 [非商业使用许可](LICENSE.md)。
 
 ---
 
 <p align="center">
-  <sub>❤️ Thank you for contributing! / 感谢你的贡献！</sub>
+  <sub>❤️ 感谢你的贡献！</sub>
 </p>
