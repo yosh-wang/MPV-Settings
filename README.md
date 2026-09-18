@@ -190,6 +190,33 @@
 
 ---
 
+## 📸 预览
+
+### 📄  mpv 软件设置
+
+<img src="screenshot/1-1.png" width="49%"> <img src="screenshot/1-2.png" width="49%">
+<img src="screenshot/1-3.png" width="49%"> <img src="screenshot/1-4.png" width="49%">
+<img src="screenshot/1-5.png" width="49%"> <img src="screenshot/1-6.png" width="49%">
+
+### ⌨️  菜单与快捷方式
+
+<img src="screenshot/2-1.png" width="49%"> <img src="screenshot/2-2.png" width="49%">
+<img src="screenshot/2-3.png" width="49%"> <img src="screenshot/2-4.png" width="49%">
+
+### 🎛  ousc 设置
+
+<img src="screenshot/3-1.png" width="70%">
+
+### 🗂  脚本管理器
+
+<img src="screenshot/4-1.png" width="70%">
+
+### 🪟 其它
+
+<img src="screenshot/5.png" width="70%">
+
+---
+
 ## ❓ 常见问题
 
 <details>
@@ -247,34 +274,5 @@
 <p align="center">
   <sub>⭐ 如果这个项目对您有帮助，请给一个 Star 支持一下！</sub>
 </p>
-
-
----
-
-## 📸 预览
-
-### 📄 a · mpv 软件设置
-
-<img src="screenshot/1-1.png" width="49%"> <img src="screenshot/1-2.png" width="49%">
-<img src="screenshot/1-3.png" width="49%"> <img src="screenshot/1-4.png" width="49%">
-<img src="screenshot/1-5.png" width="49%"> <img src="screenshot/1-6.png" width="49%">
-
-### ⌨️ b · 菜单与快捷方式
-
-<img src="screenshot/2-1.png" width="49%"> <img src="screenshot/2-2.png" width="49%">
-<img src="screenshot/2-3.png" width="49%"> <img src="screenshot/2-4.png" width="49%">
-
-### 🎛 c · ousc 设置
-
-<img src="screenshot/3-1.png" width="70%">
-
-### 🗂 d · 脚本管理器
-
-<img src="screenshot/4-1.png" width="70%">
-
-### 🪟 其它
-
-<img src="screenshot/5.png" width="70%">
-
 
 ---
