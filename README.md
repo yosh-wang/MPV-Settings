@@ -151,12 +151,6 @@
 
 ---
 
-## 📸 预览
-
-![screenshot](screenshot.png)
-
----
-
 ## 📥 下载
 
 前往 [**Releases**](https://github.com/yosh-wang/MPV-Settings/releases/latest) 下载最新的 `MPVConfig-中文便携版-x.x.x.zip`。
@@ -253,3 +247,12 @@
 <p align="center">
   <sub>⭐ 如果这个项目对您有帮助，请给一个 Star 支持一下！</sub>
 </p>
+
+
+---
+
+## 📸 预览
+
+
+
+---
