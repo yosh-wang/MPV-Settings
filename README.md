@@ -104,7 +104,7 @@
 | 运行方式 | 绿色便携，免安装，单文件运行 |
 | 管理对象 | `mpv.conf` / `input.conf` / `uosc.conf` / 脚本配置（script-opts） |
 | 最新版本 | [Releases](https://github.com/yosh-wang/MPV-Settings/releases/latest) |
-| 交流群 | 上方 QQ 群 ① / ② |
+| 交流群 | ①群：1097053691 ②群：1104144778 |
 
 ---
 
@@ -114,10 +114,10 @@
 
 | 标签 | 管理文件 | 能做什么 |
 |:----:|:---------|:---------|
-| **📄 a · mpv 软件设置** | `mpv.conf` | 全部参数分类管理；常用参数常驻、其余折叠；拖拽摆放与排序，下次打开还是你摆的样子 |
-| **⌨️ b · 菜单与快捷方式** | `input.conf` | 键位 / 命令 / 菜单路径行内直接改；跨菜单拖拽移动（自动改写 `#menu:` 路径）；快捷键冲突检测 |
-| **🎛 c · ousc 设置** | `uosc.conf` | uosc 键值可视化编辑，与脚本配置统一操作体验 |
-| **🗂 d · 脚本管理器** | `script-opts\*.conf` / `scripts\*.lua` | 全部脚本配置可编辑；lua 文件只读浏览 |
+| **mpv 软件设置** | `mpv.conf` | 全部参数分类管理；常用参数常驻、其余折叠；拖拽摆放与排序，下次打开还是你摆的样子 |
+| **菜单与快捷方式** | `input.conf` | 键位 / 命令 / 菜单路径行内直接改；跨菜单拖拽移动（自动改写 `#menu:` 路径）；快捷键冲突检测 |
+| **ousc 设置** | `uosc.conf` | uosc 键值可视化编辑，与脚本配置统一操作体验 |
+| **脚本管理器** | `script-opts\*.conf` / `scripts\*.lua` | 全部脚本配置可编辑；lua 文件只读浏览 |
 
 > 💡 **智能定位**：把 mpv 文件夹（或 mpv.exe / 任一配置文件）拖进窗口，自动定位整套配置——`portable_config` 目录结构无需手动翻找。
 
@@ -128,7 +128,7 @@
 | 功能 | 说明 |
 |:-----|:-----|
 | **🔀 拖拽摆放** | 参数拖到左侧分类上即归入并记住；拖动时右侧实时展开目标分类预览，选哪两行之间就落在哪 |
-| **✅✅ 双开关设计** | input.conf 每条快捷键两个独立开关：「✓ 启用」控制整条生效，「☰ 菜单」控制是否进 uosc 右键菜单，互不干扰 |
+| **✅ 双开关设计** | input.conf 每条快捷键两个独立开关：「✓ 启用」控制整条生效，「☰ 菜单」控制是否进 uosc 右键菜单，互不干扰 |
 | **⚠️ 冲突检测** | 键位改重复即时提醒（弹窗直达冲突行）；符合 mpv 真实规则：`o` 与 `O` 是不同的键、Ctrl 等修饰键不区分大小写与顺序、`_` 为占位键不占用 |
 | **🕘 备份与恢复** | 每次保存自动备份到 `backups\`，备份列表备注 / 恢复 / 删除一目了然，恢复前还会先把当前文件再备份一次 |
 | **↩️ 撤销** | 误删 / 误移 / 新增，一步撤回（12 秒撤销条 + 顶部「↩ 撤销」） |
@@ -253,6 +253,28 @@
 
 ## 📸 预览
 
+### 📄 a · mpv 软件设置
+
+<img src="screenshot/1-1.png" width="49%"> <img src="screenshot/1-2.png" width="49%">
+<img src="screenshot/1-3.png" width="49%"> <img src="screenshot/1-4.png" width="49%">
+<img src="screenshot/1-5.png" width="49%"> <img src="screenshot/1-6.png" width="49%">
+
+### ⌨️ b · 菜单与快捷方式
+
+<img src="screenshot/2-1.png" width="49%"> <img src="screenshot/2-2.png" width="49%">
+<img src="screenshot/2-3.png" width="49%"> <img src="screenshot/2-4.png" width="49%">
+
+### 🎛 c · ousc 设置
+
+<img src="screenshot/3-1.png" width="70%">
+
+### 🗂 d · 脚本管理器
+
+<img src="screenshot/4-1.png" width="70%">
+
+### 🪟 其它
+
+<img src="screenshot/5.png" width="70%">
 
 
 ---
