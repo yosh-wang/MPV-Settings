@@ -5,8 +5,8 @@
 If you discover a security vulnerability in this project, please **do not** report it in a public issue.  
 Instead, contact the maintainer privately:
 
-- 📧 Email: **   **
 - 💬 GitHub: [@yosh-wang](https://github.com/yosh-wang)
+- 💬 QQ groups: see README
 
 We will acknowledge your report within **7 business days**, assess the issue, and strive to release a fix or provide a response within **30 days**.
 
@@ -20,11 +20,12 @@ Once the issue is resolved, we will publish a new release and credit the reporte
 
 ## 📦 Scope
 
-This project is a Lua script that displays statistics for the mpv player. Potential security risks may include:
+This project is a **Windows desktop GUI tool** for editing mpv player configuration files (`mpv.conf`, `input.conf`, `uosc.conf`, script options). It runs fully **offline** and does not collect any data.
 
-- Arbitrary code injection if the script loads data from untrusted sources
+Potential security considerations:
 
-However, this script does **not** process user input, so the risk is extremely low.
+- The tool reads and writes local configuration files — always keep your backups
+- Only download releases from this repository's official **Releases** page; binaries from other sources may be tampered with
 
 > ⚠️ If you discover a security issue related to mpv itself, please report it directly to the **mpv team** via their official channels.
 
@@ -43,8 +44,8 @@ However, this script does **not** process user input, so the risk is extremely l
 如果你在本项目中发现了安全漏洞，请 **不要** 在公开 issue 中报告。  
 请通过以下方式私下联系维护者：
 
-- 📧 邮箱：**[]**
 - 💬 GitHub：[@yosh-wang](https://github.com/yosh-wang)
+- 💬 QQ 群：见 README 上方
 
 我们会在 **7 个工作日内** 确认并评估问题，并尽力在 **30 天内** 修复或给出回应。
 
@@ -58,13 +59,14 @@ However, this script does **not** process user input, so the risk is extremely l
 
 ## 📦 范围
 
-本项目是一个 Lua 脚本，主要功能是显示 mpv 播放器的统计信息。潜在安全风险可能包括：
+本项目是一个 **Windows 桌面 GUI 工具**，用于可视化编辑 mpv 播放器的配置文件（`mpv.conf`、`input.conf`、`uosc.conf` 及脚本配置）。程序完全**本地运行、不联网、不收集任何数据**。
 
-- 脚本执行过程中的任意代码注入（如果脚本从不可信来源加载数据）
+潜在安全注意事项：
 
-但本项目不处理用户输入，风险极低。
+- 程序会读写本地配置文件——请保留好自动备份
+- 请仅从本仓库官方 **Releases** 页面下载程序，其它来源的文件可能被篡改
 
-> ⚠️ 如果你发现与 mpv 核心相关的安全问题，请直接联系 **mpv 官方团队** 的官方渠道。
+> ⚠️ 如果你发现与 mpv 本体相关的安全问题，请直接联系 **mpv 官方团队** 的官方渠道。
 
 ---
 
