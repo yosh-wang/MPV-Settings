@@ -211,9 +211,16 @@
 
 <img src="screenshot/4-1.png" width="70%">
 
-### 🪟 其它
+### 🛡️ 防错功能示意
 
-<img src="screenshot/5.png" width="70%">
+**×N 重复参数检测** —— 重复行标红、分组条红闪 + 大号 ×N，展开查看重复明细；保存前弹窗逐条确认。
+
+<img src="screenshot/11.png" width="49%"> <img src="screenshot/22.png" width="49%">
+<img src="screenshot/33.png" width="49%"> <img src="screenshot/44.png" width="49%">
+
+**配置组冲突检测与互斥判定** —— 冲突卡片「⚠ 冲突」角标 + 对照弹窗一键修复；成对开关自动互斥。
+
+<img src="screenshot/55.png" width="49%"> <img src="screenshot/66.png" width="49%">
 
 ---
 
